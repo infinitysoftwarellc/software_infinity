@@ -12,8 +12,8 @@ if (file_exists($maintenance = __DIR__.'/storage/framework/maintenance.php')) {
 
 // Register the Composer autoloader...
 require __DIR__.'/vendor/autoload.php';
-require __DIR__.'/public/assets';
-require __DIR__.'/public/build';
+require __DIR__.'/public/assets/';
+require __DIR__.'/public/build/';
 
 // Bootstrap Laravel and handle the request...
 /** @var Application $app */
