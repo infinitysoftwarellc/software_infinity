@@ -1,0 +1,8 @@
+---
+deployment:
+  tasks:
+    # 1. Define o caminho de destino onde os arquivos serão implantados
+    #    Substitua 'seu_usuario_cpanel' e 'public_html/seu_site' pelo caminho real.
+    - export DEPLOYPATH=/home/guilher1/public_html/
+    # 2. Copia os arquivos do repositório gerenciado pelo cPanel para o caminho de destino
+    - /bin/cp -R * $DEPLOYPATH
